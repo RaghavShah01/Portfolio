@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Raghav Shah - Machine Learning Engineer Portfolio">
     <title>Raghav Shah | ML Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/profile.jpg">
+    <link rel="apple-touch-icon" href="assets/images/profile.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,8 +42,8 @@
                 <h1 class="hero-name">Raghav Shah</h1>
                 <h2 class="hero-title">Machine Learning Engineer</h2>
                 <p class="hero-description">
-                    Developing and deploying production-ready AI solutions on AWS.
-                    Passionate about translating research into practical healthcare applications.
+                    Developing and deploying production-ready AI solutions on AWS or other cloud services.
+                    Passionate about translating research into practical production ready applications.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -50,7 +53,7 @@
                     <a href="mailto:r.shah.aiengineer@gmail.com" aria-label="Email" class="social-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                     </a>
-                    <a href="https://linkedin.com/in/raghavshah01" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                    <a href="https://www.linkedin.com/in/raghav-shah01/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                     </a>
                     <a href="https://github.com/RaghavShah01" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
@@ -92,7 +95,7 @@
                             <span class="stat-label">Inference Time Reduction</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">$20K+</span>
+                            <span class="stat-number">$200K+</span>
                             <span class="stat-label">Annual Cost Savings</span>
                         </div>
                         <div class="stat">
@@ -260,6 +263,60 @@
                         <span>Gemini</span>
                     </div>
                 </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <span class="project-date">2024-2025</span>
+                    </div>
+                    <h3 class="project-title">CTA Data Analysis</h3>
+                    <p class="project-subtitle">Big Data ETL Pipeline for Chicago Transit</p>
+                    <p class="project-description">
+                        Built an end-to-end <strong>serverless ETL pipeline</strong> analyzing Chicago Transit Authority ridership,
+                        crime, and weather data from 2001-2025. Automated pipeline triggers on S3 upload via Lambda,
+                        executing dynamic COPY commands into Redshift.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Processed 8,970+ daily ridership records spanning ~20 years</li>
+                        <li>Identified crime hotspots on CTA platforms; recommended 20-30% summer security increase</li>
+                        <li>Future scope: SageMaker predictive modeling & Kinesis real-time streaming</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>AWS S3</span>
+                        <span>Lambda</span>
+                        <span>Redshift</span>
+                        <span>Python</span>
+                        <span>Tableau</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <span class="project-date">Dec 2025</span>
+                    </div>
+                    <h3 class="project-title">Invisible Lines</h3>
+                    <p class="project-subtitle">Chicago Community Network Analysis</p>
+                    <p class="project-description">
+                        Applied <strong>network science and spatial analytics</strong> to examine economic segregation,
+                        infrastructure vulnerability, crime patterns, and transit accessibility across Chicago communities
+                        using Global Moran's I and network regression.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Found R² > 0.99 crime spillover correlation between neighboring areas</li>
+                        <li>Identified 197x transit disparity between Chatham and South Shore</li>
+                        <li>Led spatial econometrics analysis with Queen contiguity weight matrices</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Spatial Analytics</span>
+                        <span>Network Science</span>
+                        <span>Moran's I</span>
+                        <span>Holt-Winters</span>
+                        <span>Python</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -403,7 +460,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <span>+1 (872) 258-3155</span>
                     </a>
-                    <a href="https://linkedin.com/in/raghavshah01" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <a href="https://www.linkedin.com/in/raghav-shah01/" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                         <span>LinkedIn</span>
                     </a>
