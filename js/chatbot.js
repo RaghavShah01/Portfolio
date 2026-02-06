@@ -1,8 +1,9 @@
 // ============================================
-// OpenRouter API Configuration
+// API Configuration
 // ============================================
-const OPENROUTER_API_KEY = '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';
-const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
+// IMPORTANT: Replace with your Cloudflare Worker URL after deployment
+// Example: 'https://portfolio-ai-proxy.your-subdomain.workers.dev'
+const API_PROXY_URL = 'https://portfolio-ai-proxy.raghavshah01.workers.dev';
 const MODEL = 'deepseek/deepseek-r1-0528:free';
 
 // ============================================
@@ -135,13 +136,11 @@ Format your response clearly with sections.` : SYSTEM_PROMPT;
     }
 
     try {
-        const response = await fetch(OPENROUTER_API_URL, {
+        // Call through secure proxy (API key is stored on Cloudflare Worker)
+        const response = await fetch(API_PROXY_URL, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
-                'HTTP-Referer': window.location.href,
-                'X-Title': 'Raghav Shah Portfolio'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 model: MODEL,
