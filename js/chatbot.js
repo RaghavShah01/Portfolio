@@ -3,7 +3,7 @@
 // ============================================
 // IMPORTANT: Replace with your Cloudflare Worker URL after deployment
 // Example: 'https://portfolio-ai-proxy.your-subdomain.workers.dev'
-const API_PROXY_URL = 'https://portfolio-ai-proxy.raghavshah01.workers.dev';
+const API_PROXY_URL = 'https://portfolio-ai-proxy.raghavshah900.workers.dev';
 const MODEL = 'deepseek/deepseek-r1-0528:free';
 
 // ============================================
