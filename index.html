@@ -485,6 +485,81 @@
         </div>
     </footer>
 
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot">
+        <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open AI Assistant">
+            <svg class="chat-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="chatbot-window hidden" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">RS</div>
+                    <div>
+                        <h4>Raghav's AI Assistant</h4>
+                        <span class="chatbot-status">Online</span>
+                    </div>
+                </div>
+                <button class="skills-matcher-btn" id="skills-matcher-btn" title="Skills Matcher">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    Job Fit
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        Hi! I'm Raghav's AI assistant. Ask me anything about his experience, skills, or projects! Try:
+                        <ul class="suggestions">
+                            <li>"What's your experience with PyTorch?"</li>
+                            <li>"Tell me about MedCompare"</li>
+                            <li>"What AWS skills do you have?"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Ask about skills, projects, experience..." autocomplete="off">
+                <button id="chatbot-send" aria-label="Send message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Matcher Modal -->
+    <div class="modal-overlay hidden" id="skills-modal-overlay">
+        <div class="skills-modal" id="skills-modal">
+            <div class="modal-header">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    Job Fit Analyzer
+                </h3>
+                <button class="modal-close" id="modal-close" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description">Paste a job description below and I'll show you how Raghav's skills and experience match the requirements.</p>
+                <textarea id="job-description" placeholder="Paste job description here..."></textarea>
+                <button class="analyze-btn" id="analyze-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    Analyze Fit
+                </button>
+                <div class="match-results hidden" id="match-results">
+                    <div class="match-score" id="match-score">
+                        <div class="score-circle">
+                            <span class="score-value">0%</span>
+                        </div>
+                        <span class="score-label">Match Score</span>
+                    </div>
+                    <div class="matched-skills" id="matched-skills"></div>
+                    <div class="matched-projects" id="matched-projects"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>
