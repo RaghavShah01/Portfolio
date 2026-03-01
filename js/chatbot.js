@@ -33,63 +33,45 @@ Machine Learning Engineer with expertise in developing and deploying production-
 
 ## WORK EXPERIENCE
 
-### CCC Intelligent Solutions | Data Science Engineer Intern (May 2025 - Present)
-- Optimized and deployed computer vision models using AWS SageMaker and Kubernetes, reducing inference time by 40%
-- Migrated deployed models to AWS Graviton, creating cost-efficient pipelines that reduced infrastructure costs
-- Engineered a custom data annotation platform, boosting annotation speed by 50% and saving over $200K annually
+### CCC Intelligent Solutions | Data Science Engineer (May 2025 - Present)
+- Architected multi-model ensemble pipelines for CCC Estimate-STP and migrated inference workloads from x86 to AWS Graviton, reducing inference costs by 40% at equivalent production throughput
+- Owned end-to-end release of transformer-based vision models into CCC ONE production — establishing CI/CD pipelines, Docker containerization, and model versioning workflows
+- Designed and deployed 5+ production AI services on AWS (SageMaker, Step Functions, Lambda, CloudWatch) using Terraform, packaging each release with Flask, Docker, and PyPI
+- Built an agentic load testing framework using AWS Bedrock, LangChain, and Locust — cutting manual QA time by 70%
 - Designed scalable visualization tool for exploring 100K+ image embeddings, improving model iteration cycles by 30%
-- Developed model inference pipelines using PyTorch and TensorFlow on AWS SageMaker
-- Automated car damage detection, tag prediction, and production releases via AWS Step Functions
 
 ### Edifecs Technologies | Associate Data Engineer (Jan 2024 - Aug 2024)
-- Managed deployment of 15+ Health Insurance Enrollment Software suites on AWS
-- Processed 1M+ EDI and 834 Enrollment files with HIPAA compliance
-- Used AWS services (EC2, S3, Lambda, RDS, Step Functions) and Docker
-- Reduced transaction processing time by 20%
+- Deployed and configured Edifecs Enrollment Management software for 10+ U.S. health plan clients across hybrid environments (AWS EC2, RDS, Lambda, S3, and on-premises)
+- Engineered HIPAA-compliant X12 EDI transaction pipelines from scratch for new client onboarding
 
 ### Celebel Technologies | Data Science Intern (Jun 2023 - Dec 2023)
-- Developed interactive dashboards using Matplotlib and Pandas
-- Applied deep learning with PyTorch, reducing design iteration time by 15%
+- Developed an NLP text classification pipeline using Scikit-learn and Pandas to analyze customer support tickets, achieving 94% classification accuracy
 
 ## PROJECTS
 
-### MedCompare - AI-Driven Medication Data Evaluation Platform (Apr 2025)
-- Built benchmarking engine to evaluate AI-generated drug data across 400+ medications
-- Used fuzzy logic, semantic similarity scoring, and LLMs (OpenAI, Gemini, Llama, DeepSeek)
-- Achieved 87% overall accuracy, reduced validation time by 60%
-- Processed 10,000+ JSON records, validated 10+ clinical fields
-- FHIR-compliant for clinical integration
+### MedCompare - AI-Driven Medication Data Evaluation · Leap Of Faith Technologies (Apr 2025)
+- Built benchmarking engine evaluating AI-generated drug data across 800+ medications using NLP (semantic similarity, fuzzy logic) and LLMs (GPT-4, Gemini, Llama, DeepSeek), achieving 87% accuracy and reducing manual validation time by 60%
+- Architected data pipelines processing 100K+ JSON records, normalizing and validating clinical fields (dosage, adverse reactions, contraindications) with Pandas for FHIR-compliant integration
 
-### CTA Data Analysis - Big Data ETL Pipeline (2024-2025)
-- End-to-end serverless ETL pipeline for Chicago Transit Authority data
-- Architecture: S3 → Lambda → Redshift, Tableau visualization
-- Analyzed ridership, crime, weather from 2001-2025
-- Processed 8,970+ daily ridership records
-- Found post-pandemic ridership below 2019 levels
-- Identified crime hotspots on CTA platforms
-- Recommended 20-30% summer security staff increase
-- Future scope: SageMaker predictive modeling, Kinesis streaming
+### CTA Data Analysis - Serverless ETL Pipeline for Chicago Transit (Jan 2026)
+- Built a serverless ETL pipeline on AWS (S3, Lambda, Redshift) integrating 20 years of CTA ridership, crime, and weather data
+- Conducted spatial crime hotspot analysis using GeoPandas and Tableau, identifying seasonal crime patterns
 
-### Invisible Lines - Chicago Community Network Analysis (Dec 2025)
-- Network science and spatial analytics project
-- Examined economic segregation, crime patterns, transit accessibility
-- Used Global Moran's I, network regression, Holt-Winters forecasting
-- Found R² > 0.99 crime spillover correlation
-- Identified 197x transit disparity between communities
-- Led spatial econometrics analysis
+### Invisible Lines - Chicago Community Network Analysis (Dec 2024)
+- Quantified income spatial autocorrelation (Moran's I: 0.52–0.73) and crime spillover effects (R² > 0.99) across 4 Chicago community areas using spatial econometrics and NetworkX — analyzing 81,000+ crime records spanning 2001–2024
+- Identified a 197× transit accessibility disparity between Chatham (TAI: 98.6) and South Shore (TAI: 0.5) using inverse distance weighting analysis across 77+ block groups
 
 ### Hybrid AgileGen - AI-Driven Software Planning (Nov 2024)
-- Combined Scrum and Waterfall methodologies
-- Created 10+ use cases, 30+ requirements, 5 workflows
-- Used Autogen, LangChain, LangGraph with OpenAI and Gemini
-- Boosted planning efficiency by 30%
+- Combined Scrum and Waterfall methodologies, creating 10+ use cases, 30+ requirements, 5 workflows
+- Used Autogen, LangChain, LangGraph with OpenAI and Gemini — boosted planning efficiency by 30%
 
 ## TECHNICAL SKILLS
-- ML & AI: PyTorch, TensorFlow, Scikit-learn, NumPy, Pandas, NLTK, LLMs, LangChain, OpenCV
-- Programming: Python, C++, R, Java, C#, JavaScript, Kotlin, HTML, CSS
-- Databases: SQL, Firebase, SQLite, MongoDB, AWS DynamoDB
-- Cloud & DevOps: AWS (SageMaker, Lambda, S3, EC2, Redshift, Bedrock, Step Functions, EventBridge, ECR), Docker, Kubernetes, CI/CD, Git
-- Frameworks: React, Node.js, Flask
+- ML & Statistics: Scikit-learn, Regression, Classification, Clustering, Time Series, Predictive Modeling, A/B Testing, Churn Analysis, Funnel Analysis, Data Mining, SciPy
+- Deep Learning: TensorFlow, Keras, PyTorch, DNN, CNN, RNN (LSTM)
+- NLP: NLTK, SpaCy, flair, sklearn-crfsuite, LangChain, LangGraph, LLMs (GPT, Gemini, Llama, DeepSeek)
+- Data Analysis & Visualization: Pandas, NumPy, SciPy, Matplotlib, Seaborn, R, Tableau, GeoPandas, EDA, Business KPI Reporting
+- Cloud & MLOps: AWS (SageMaker, Lambda, Step Functions, S3, EC2, ECR, EKS), Docker, Kubernetes, Terraform, CI/CD
+- Programming: Python, R, SQL, Java, JavaScript, C++
 
 ## PUBLICATION
 "Enhancing Machine Learning Model Using Explainable AI" - Springer LNNS, Volume 796, Jan 2024
